@@ -1,22 +1,22 @@
-# Finalidade do Repositório
+## Finalidade do Repositório
 
-Este é um repositório de teste de entrevista.
+Este é um repositório de teste para entrevista.
 
-## Recursos necessarios
+## Caso queira alterar a parte do html
+### Recursos necessarios
 
 - Node
 - NPM
 
-### Antes de desenvolver
+#### Antes de desenvolver
 
 - Ir na pasta do projeto e rodar `npm install`
 
-### Usando o Grunt
+#### Usando o Grunt
 
 O sistema esta usando o *Grunt* para auto compilar os arquivos LESS e SCSS.
 
-É necessario que o serviço do grunt sempre esteja rodando para "observar" alterações nos arquivos  
-`.less` e `.scss`, das pastas `public/build/less` e `public/build/sass`.
+É necessario que o serviço do grunt sempre esteja rodando para "observar" alterações nos arquivos `.less` e `.scss`, das pastas `public/build/less` e `public/build/sass`.
 
 Para isso :
 
