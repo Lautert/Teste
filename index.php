@@ -1,5 +1,6 @@
 <?php
-	require_once "./backend/func.php"
+	require_once "./backend/func.php";
+	require_once "./backend/Point.php";
 ?>
 <!doctype html>
 <html>
@@ -121,6 +122,83 @@ Func::getAreaFromOverlapRetangles($s1, $e1, $s2, $e2);
 					</div>
 				</fieldset>
 			</li>
+
+			<li>
+				<fieldset>
+					<legend>Questão 7:</legend>
+					<div>
+						<span>Input : <pre>
+$A = new Point('A');
+$B = new Point('B');
+$C = new Point('C');
+$D = new Point('D');
+$E = new Point('E');
+$F = new Point('F');
+$G = new Point('G');
+$H = new Point('H');
+
+$structure = new Structure('Map');
+$structure->addPoint($A);
+$structure->addPoint($B);
+$structure->addPoint($C);
+$structure->addPoint($D);
+$structure->addPoint($E);
+$structure->addPoint($F);
+$structure->addPoint($G);
+
+$structure->addLink($A, $B, 7);
+$structure->addLink($A, $D, 5);
+$structure->addLink($B, $D, 9);
+$structure->addLink($B, $C, 8);
+$structure->addLink($C, $E, 5);
+$structure->addLink($B, $E, 7);
+$structure->addLink($D, $E, 15);
+$structure->addLink($D, $F, 6);
+$structure->addLink($F, $E, 8);
+$structure->addLink($F, $G, 11);
+$structure->addLink($E, $G, 9);
+
+$structure->searchConnection($A, $E);
+						</pre></span>
+						<span>Output :
+							<?php
+								$A = new Point('A');
+								$B = new Point('B');
+								$C = new Point('C');
+								$D = new Point('D');
+								$E = new Point('E');
+								$F = new Point('F');
+								$G = new Point('G');
+								$H = new Point('H');
+
+								$structure = new Structure('Map');
+								$structure->addPoint($A);
+								$structure->addPoint($B);
+								$structure->addPoint($C);
+								$structure->addPoint($D);
+								$structure->addPoint($E);
+								$structure->addPoint($F);
+								$structure->addPoint($G);
+
+								$structure->addLink($A, $B, 7);
+								$structure->addLink($A, $D, 5);
+								$structure->addLink($B, $D, 9);
+								$structure->addLink($B, $C, 8);
+								$structure->addLink($C, $E, 5);
+								$structure->addLink($B, $E, 7);
+								$structure->addLink($D, $E, 15);
+								$structure->addLink($D, $F, 6);
+								$structure->addLink($F, $E, 8);
+								$structure->addLink($F, $G, 11);
+								$structure->addLink($E, $G, 9);
+
+								pr($structure->searchConnection($A, $E));
+							?>
+						</span>
+					</div>
+				</fieldset>
+			</li>
+
 			<li>
 				<a href="backend/ER">SQL - Modelo relacional</a>
 			</li>
