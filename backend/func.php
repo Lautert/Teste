@@ -237,5 +237,3 @@
 			return $x_overlap * $y_overlap;
 		}
 	}
-
-// 7)
